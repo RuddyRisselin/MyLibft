@@ -28,6 +28,8 @@ int	ft_triprintf(const char format, va_list info)
 		return (ft_printuns(va_arg(info, unsigned int)));
 	else if (format == '%')
 		return (ft_putchar('%'));
+	else if (format == 't')
+		return (ft_print_tab(va_arg(info, char **)));
 	else if (format == 'x')
 		return (ft_putnbr_base(va_arg(info, int), "0123456789abcdef"));
 	else if (format == 'X')

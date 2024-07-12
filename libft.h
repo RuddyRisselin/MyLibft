@@ -6,7 +6,7 @@
 /*   By: rrisseli <rrisseli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:54:21 by rrisseli          #+#    #+#             */
-/*   Updated: 2024/07/07 13:35:43 by rrisseli         ###   ########.fr       */
+/*   Updated: 2024/07/12 12:45:53 by rrisseli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,6 @@ char	*ft_buffertrim(char *buffer);
 char	**ft_split(char const *s, char c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_strcmp(char *s1, char *s2);
-void	ft_print_tab(char **tab);
 t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
@@ -82,8 +81,9 @@ char	*get_next_line(int fd, int n);
 char	*ft_getline(char *buffer);
 char	*ft_readline(int fd, char *temp_line);
 
-int		ft_triprintf(const char format, va_list info);
 int		ft_printf(const char *format, ...);
+int		ft_triprintf(const char format, va_list info);
+int		ft_print_tab(char **tab);
 int		ft_putchar(char c);
 int		ft_putstr(char *s);
 int		ft_printd(int nb);
